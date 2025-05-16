@@ -11,6 +11,10 @@ namespace Microsoft.AspNetCore.Http;
 [DebuggerDisplay("HttpContext = {HttpContext}")]
 public class HttpContextAccessor : IHttpContextAccessor
 {
+    /// <summary>
+    /// static readonly，所以与应用程序域(AppDomain)同生命周期
+    /// AsyncLocal<T> 是 .NET 提供的特殊类型，它会在异步控制流中保持数据的隔离性
+    /// </summary>
     private static readonly AsyncLocal<HttpContextHolder> _httpContextCurrent = new AsyncLocal<HttpContextHolder>();
 
     /// <inheritdoc/>

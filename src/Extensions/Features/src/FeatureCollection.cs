@@ -11,7 +11,7 @@ using Microsoft.AspNetCore.Shared;
 namespace Microsoft.AspNetCore.Http.Features;
 
 /// <summary>
-/// Default implementation for <see cref="IFeatureCollection"/>.
+/// IFeatureCollection的默认实现 <see cref="IFeatureCollection"/>.
 /// </summary>
 [DebuggerDisplay("Count = {GetCount()}")]
 [DebuggerTypeProxy(typeof(FeatureCollectionDebugView))]

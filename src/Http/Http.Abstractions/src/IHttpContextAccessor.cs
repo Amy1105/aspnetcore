@@ -5,6 +5,7 @@ namespace Microsoft.AspNetCore.Http;
 
 /// <summary>
 /// Provides access to the current <see cref="HttpContext"/>, if one is available.
+/// 提供对当前<see cref="HttpContext"/>的访问（如果有的话）。
 /// </summary>
 /// <remarks>
 /// This interface should be used with caution. It relies on <see cref="System.Threading.AsyncLocal{T}" /> which can have a negative performance impact on async calls.
